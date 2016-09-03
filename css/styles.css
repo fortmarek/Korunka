@@ -1,0 +1,61 @@
+
+
+@font-face {
+    font-family: 'Montserrat Hairline';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #EFB301;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+nav a:hover,
+nav a:active {
+    border-bottom: 3px solid whitesmoke;
+}
+
+nav li a {
+    color: #F2B500;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav p {
+    color: #EFB301;
+    float: left;
+    margin-left: 20px;
+}
