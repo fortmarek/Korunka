@@ -42,12 +42,6 @@ html, body {
 
 }
 
-h2, h3 {
-    font-family: 'Dejavu', 'Arial', sans-serif;
-    letter-spacing: 2px;
-}
-
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -63,6 +57,26 @@ h2, h3 {
 
 h1 {
     font-weight: 100;
+    text-align: center;
+    color: #EFB301;
+    margin-top: 40px;
+    font-size: 3em;
+}
+
+h1:after {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: 350px;
+    height: 2px;
+    background-color: #EFB301;
+
+}
+
+h2, h3 {
+    font-family: 'Dejavu', 'Arial', sans-serif;
+    letter-spacing: 2px;
 }
 
 /* ------------------
@@ -79,6 +93,7 @@ header {
 ----- NAVIGATION ----- */
 
 nav {
+    font-family: 'Montserrat', 'Arial', sans-serif;
     padding-top: 30px;
     height: 13%;
     color: #EFB301;
@@ -117,9 +132,9 @@ nav ul {
 }
 
 nav p {
-    position: absolute;
+    display: inline-block;
     color: #EFB301;
-    left: 5px;
+    margin-left: 20px;
 }
 
 /* ------------------
@@ -130,7 +145,7 @@ nav p {
     width: 100%;
     height: 87%;
     overflow: hidden;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.4) 70%), url("../img/photo-1469082993720-0b12bbd9e68b.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.4) 70%), url("../img/photo-1469082993720-0b12bbd9e68b.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -183,16 +198,17 @@ nav p {
 .news {
     width: 100%;
     /*background-color: #F4F4F4;*/
-    background: linear-gradient(#F7CA3E, #EFB301);
+    /*background: linear-gradient(#F7CA3E, #EFB301);*/
     background-size: cover;
     background-position: center;
     -webkit-transform: translateZ(0);
-    padding: 50px 50px 100px 100px;
 }
 
-.column, .projects, .club, .achievements {
+.column {
+    padding-left: 3%;
+    margin-top: 5%;
     position: relative;
-    width: 50%;
+    width: 33.33%;
     display: inline-block;
     float: left;
 }
@@ -211,7 +227,7 @@ nav p {
 }
 
 .article-box {
-    width: 70%;
+    width: 95%;
 }
 
 .article {
@@ -263,6 +279,18 @@ nav p {
 
 .column:nth-child(3) .article-box:nth-child(2)  .link-image:before {
     background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_andersen.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.column:nth-child(4) .article-box:nth-child(1)  .link-image:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2015_satir.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.column:nth-child(4) .article-box:nth-child(2)  .link-image:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_sd_malovani.jpg');
     background-size: cover;
     background-position: top;
 }
@@ -326,6 +354,14 @@ nav p {
 
 .column:nth-child(3) .article-box:nth-child(2) .sublink:before {
     background-color: yellow;
+}
+
+.column:nth-child(4) .article-box:nth-child(1) .sublink:before {
+    background-color: yellow;
+}
+
+.column:nth-child(4) .article-box:nth-child(2) .sublink:before {
+    background-color: blue;
 }
 
 
