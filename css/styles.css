@@ -216,36 +216,19 @@ nav p {
 
 .article {
     width: 100%;
-}
-
-.news p {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 0.8em;
-    color: #bbbbbb;
-    font-family: 'Dejavu', 'Arial', sans-serif;
-
-
+    top: 0;
+    left: 0;
 }
 
-.news p:before {
-    content: '';
-    width: 2px;
-    height: 16px;
-    background-color: red;
-    float: left;
-    margin-right: 10px;
-    margin-top: 2px;
-
-}
-
-.news a {
+.link-image {
     position: relative;
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
-.news a:before {
+.link-image:before {
     content: '';
     position: absolute;
     top: 0;
@@ -253,29 +236,111 @@ nav p {
     z-index: -1;
 
     display: block;
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_karel_pripravka.jpg');
-    background-size: cover;
-    background-position: center;
+
     width: 100%;
     height: 100%;
 
     transition: all 0.5s ease;
 }
 
-.news a:hover:before, .news a:active:before {
+#first-article:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_karel_pripravka.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.column:nth-child(2) .article-box:nth-child(2)  .link-image:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_bolt.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.column:nth-child(3) .article-box:nth-child(1)  .link-image:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_epopej.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.column:nth-child(3) .article-box:nth-child(2)  .link-image:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_andersen.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.link-image:hover:before, .link-image:active:before {
     transform: scale(1.12);
     filter: blur(1px);
+}
+
+.link-image {
+    overflow: hidden;
+}
+
+.article {
+    padding-left: 10px;
 }
 
 .article h3 {
     font-weight: 400;
     letter-spacing: 1px;
     position: absolute;
-    bottom: 45px;
+    bottom: 35px;
     width: 100%;
-    padding-left: 10px;
     text-align: left;
+}
+
+
+.sublink {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #bbbbbb;
+    font-family: 'Dejavu', 'Arial', sans-serif;
+    display: inline;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.sublink:hover, .sublink:active {
+    text-decoration: underline;
+}
+
+.sublink:before {
+    content: '';
+    background-color: red;
+    width: 2px;
+    height: 16px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.column:nth-child(2) .article-box:nth-child(1) .sublink:before {
+    background-color: red;
+}
+
+.column:nth-child(3) .article-box:nth-child(1) .sublink:before {
+    background-color: blue;
+}
+
+.column:nth-child(3) .article-box:nth-child(2) .sublink:before {
+    background-color: yellow;
+}
+
+
+.article a:before {
+    content: '';
+    width: 2px;
+    height: 16px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+.article a:hover, .article a:active {
+    text-decoration: underline;
 }
 
 
