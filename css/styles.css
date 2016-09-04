@@ -104,26 +104,29 @@ nav p {
 
 .introduction a {
     text-decoration: none;
-    margin-top: 15%;
+    top: 50%;
+    position: absolute;
 }
 
 .left-chevron {
+    position: absolute;
     float: left;
-    margin-left: 40px;
+    left: 40px;
     display: inline-block;
 }
 
 .right-chevron {
+    position: absolute;
     float: right;
-    margin-right: 40px;
+    right: 40px;
     display: inline-block;
 }
 
 .headlines {
+    position: absolute;
     margin-left: 10%;
     height: 10%;
-    position: relative;
-    margin-top: 20%;
+    bottom: 10%;
 }
 
 
