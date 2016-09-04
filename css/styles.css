@@ -6,7 +6,13 @@
 
 @font-face {
     font-family: 'Arimo';
-    src: url('../fonts/Arimo-Regular.ttf')
+    src: url('../fonts/Arimo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/Arimo-Bold.ttf');
+    font-weight: bold;
 }
 
 @font-face {
@@ -155,7 +161,7 @@ nav p {
     bottom: 20px;
 }
 
-.headlines h3, p {
+.headlines h3, .headlines p {
     margin-left: 30px;
     margin-right: 40px;
 }
@@ -203,6 +209,23 @@ nav p {
     overflow: hidden;
 }
 
+.article-box {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.news p {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.news .fa {
+    margin-right: 5px;
+}
+
 .news a {
     position: relative;
     display: block;
@@ -216,13 +239,13 @@ nav p {
     z-index: -1;
 
     display: block;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 90%), url('../img/00_2016_karel_pripravka.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 90%), url('../img/00_2016_karel_pripravka.jpg');
     background-size: cover;
     background-position: center;
     width: 450px;
     height: 250px;
 
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 
 .news a:hover:before, .news a:active:before {
@@ -239,10 +262,6 @@ nav p {
     width: 450px;
     padding-left: 10px;
     text-align: center;
-}
-
-.news p {
-    color: #000;
 }
 
 
