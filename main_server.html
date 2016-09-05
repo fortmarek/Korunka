@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZŠ Korunovační</title>
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/korunka/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+</head>
+
+
+<!--Accessing static files for css-->
+<style>
+
+    @font-face {
+        font-family: 'Arimo';
+        src: url('{{ url_for('static', filename='fonts/korunka/Arimo-Regular.ttf') }}');
+    }
+
+    @font-face {
+        font-family: 'Arimo';
+        src: url('{{ url_for('static', filename='fonts/korunka/Arimo-Bold.ttf') }}');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: 'Dejavu';
+        src: url('{{ url_for('static', filename='fonts/korunka/DejaVuSans-ExtraLight.ttf') }}');
+        font-weight: 100;
+    }
+
+    @font-face {
+        font-family: 'Dejavu';
+        src: url('{{ url_for('static', filename='fonts/korunka/DejaVuSans.ttf') }}');
+    }
+
+    .introduction {
+        background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.5) 70%), url('{{ url_for('static', filename='img/korunka/photo-1469082993720-0b12bbd9e68b.jpg') }}') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #first-article:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url("{{ url_for('static', filename='img/korunka/00_2016_karel_pripravka.jpg') }}");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .column:nth-child(2) .article-box:nth-child(2)  .link-image:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('{{ url_for('static', filename='img/korunka/00_2016_bolt.jpg') }}');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .column:nth-child(3) .article-box:nth-child(1)  .link-image:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('{{ url_for('static', filename='img/korunka/00_2016_epopej.jpg') }}');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .column:nth-child(3) .article-box:nth-child(2)  .link-image:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('{{ url_for('static', filename='img/korunka/00_2016_andersen.jpg') }}');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .column:nth-child(4) .article-box:nth-child(1)  .link-image:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('{{ url_for('static', filename='img/korunka/00_2015_satir.jpg') }}');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .column:nth-child(4) .article-box:nth-child(2)  .link-image:before {
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('{{ url_for('static', filename='img/korunka/00_2016_sd_malovani.jpg') }}');
+        background-size: cover;
+        background-position: top;
+    }
+
+</style>
+
+
+
+<body>
+
+<header>
+    <nav>
+        <p>ZŠ Korunovační</p>
+        <ul>
+            <li><a href="#">Aktuality</a></li>
+            <li><a href="#">Kontakty</a></li>
+            <li><a href="#">Procházky školou</a></li>
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Poradenské centrum</a></li>
+            <li><a href="#">Školní družina</a></li>
+            <li><a href="#">Sponzoři</a></li>
+        </ul>
+    </nav>
+
+    <div class="introduction">
+        <a href="#" class="left-chevron"><i class="fa fa-chevron-left fa-lg"></i></a>
+        <a href="#" class="right-chevron"><i class="fa fa-chevron-right fa-lg"></i></a>
+        <div class="headlines">
+            <h3>Školní olympiáda</h3>
+            <p>Naše škola zaznamenala další úspěch, tentokrát za druhé místo ve fyzice</p>
+        </div>
+    </div>
+
+
+</header>
+
+<div class="news clearfix">
+    <h1>NOVINKY</h1>
+    <div class="column">
+        <div class="article-box">
+            <a href="#" class="sublink">AKTUALITY</a>
+            <a href="#" class="link-image" id="first-article">
+                <div class="article">
+                    <h3>Přípravná třída šla po stopách Karla IV.</h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="article-box">
+            <a href="#" class="sublink">AKTUALITY</a>
+            <a href="#" class="link-image">
+                <div class="article">
+                    <h3>Čokoládová tretra s USAINEM BOLTEM (děti z Korunky také velmi zářily)</h3>
+
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="article-box">
+            <a href="#" class="sublink">DRUŽINA</a>
+            <a href="#" class="link-image">
+                <div class="article">
+                    <h3>Slovanská epopej je monumentální (ŠD)</h3>
+                </div>
+            </a>
+        </div>
+        <div class="article-box">
+            <a href="#" class="sublink">PROJEKTY</a>
+            <a href="#" class="link-image">
+                <div class="article">
+                    <h3>Andersenovská noc pod vodou</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="article-box">
+            <a href="#" class="sublink">PROJEKTY</a>
+            <a href="#" class="link-image" id="fifth-article">
+                <div class="article">
+                    <h3>Výtvarné kluby vystavují na korunka.org</h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="article-box">
+            <a href="#" class="sublink">DRUŽINA</a>
+            <a href="#" class="link-image" id="sixth-article">
+                <div class="article">
+                    <h3>Školní družina malovala s jízdní policií</h3>
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

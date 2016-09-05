@@ -4,28 +4,6 @@
     font-family: 'Montserrat Hairline';
 }
 
-@font-face {
-    font-family: 'Arimo';
-    src: url('../fonts/Arimo-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Arimo';
-    src: url('../fonts/Arimo-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Dejavu';
-    src: url('../fonts/DejaVuSans-ExtraLight.ttf');
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'Dejavu';
-    src: url('../fonts/DejaVuSans.ttf');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -145,7 +123,7 @@ nav p {
     width: 100%;
     height: 87%;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.5) 70%), url("../img/photo-1469082993720-0b12bbd9e68b.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.5) 70%), url('{{ url_for('static', filename='img/korunka/photo-1469082993720-0b12bbd9e68b.jpg') }}') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -259,42 +237,6 @@ nav p {
     height: 100%;
 
     transition: all 0.5s ease;
-}
-
-#first-article:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_karel_pripravka.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.column:nth-child(2) .article-box:nth-child(2)  .link-image:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_bolt.jpg');
-    background-size: cover;
-    background-position: top;
-}
-
-.column:nth-child(3) .article-box:nth-child(1)  .link-image:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_epopej.jpg');
-    background-size: cover;
-    background-position: top;
-}
-
-.column:nth-child(3) .article-box:nth-child(2)  .link-image:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_andersen.jpg');
-    background-size: cover;
-    background-position: top;
-}
-
-.column:nth-child(4) .article-box:nth-child(1)  .link-image:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2015_satir.jpg');
-    background-size: cover;
-    background-position: top;
-}
-
-.column:nth-child(4) .article-box:nth-child(2)  .link-image:before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 90%), url('../img/00_2016_sd_malovani.jpg');
-    background-size: cover;
-    background-position: top;
 }
 
 .link-image:hover:before, .link-image:active:before {
