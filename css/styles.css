@@ -381,6 +381,29 @@ nav p {
     text-decoration: underline;
 }
 
+.next-button {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#next {
+    color: #EFB301;
+    text-decoration: none;
+    padding: 7px 40px;
+    font-size: 1.3em;
+    border-radius: 200px;
+    border: 2px solid #EFB301;
+}
+
+#next:hover, #next:active {
+    background-color: #EFB301;
+    color: #FFFFFF;
+    transition: 0.6s ease;
+}
+
+
 
 
 
